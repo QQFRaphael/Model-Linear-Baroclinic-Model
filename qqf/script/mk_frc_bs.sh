@@ -28,39 +28,39 @@ cd ../../solver/util/
 [[ -f SETPAR ]] && rm -rf SETPAR
 
 cat > ./SETPAR  << SETPAR 
- &nmfgt cfs='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/psi',
-        cfc='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/chi',
-        cfu='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/u',
-        cfv='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/v',
-        cfw='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/w',
-        cft='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/t',
-        cfz='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/z',
-        cfp='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/p',
-        cfq='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/q',
-        cfx='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/dt',
-        cfy='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/Gtools/dq',
-        cfo='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/out/linear.t42l20.qqf.grd',
+ &nmfgt cfs='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/psi',
+        cfc='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/chi',
+        cfu='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/u',
+        cfv='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/v',
+        cfw='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/w',
+        cft='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/t',
+        cfz='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/z',
+        cfp='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/p',
+        cfq='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/q',
+        cfx='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/dt',
+        cfy='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/Gtools/dq',
+        cfo='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/out/linear.t42l20.qqf.grd',
         fact=1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
         opl=t,
  &end
 
- &nmbs  cbs0='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/bs/qqf.t42l20',
-        cbs='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/bs/qqf.t42l20.grd'
+ &nmbs  cbs0='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/bs/qqf.t42l20',
+        cbs='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/bs/qqf.t42l20.grd'
  &end
 
- &nmncp cncep='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/mybs/ncep.clim.y79-14.t42.grd',
-        cncep2='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/mybs/ncep.clim.y79-14.ps.t42.grd',
-        calt='/home/qqf/Documents/Linear-Baroclinic-Model/bs/gt3/grz.t42',
+ &nmncp cncep='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/mybs/ncep.clim.y79-14.t42.grd',
+        cncep2='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/mybs/ncep.clim.y79-14.ps.t42.grd',
+        calt='/home/qqf/Model/Model-Linear-Baroclinic-Model/bs/gt3/grz.t42',
         kmo=$kmo, navg=$navg, ozm=f, osw=f, ousez=t
  &end
 
- &nmecm cecm='/home/qqf/Documents/Linear-Baroclinic-Model/bs/ecmwf/ERA40.clim.t42.grd',
-        calt='/home/qqf/Documents/Linear-Baroclinic-Model/bs/gt3/grz.t42',
+ &nmecm cecm='/home/qqf/Model/Model-Linear-Baroclinic-Model/bs/ecmwf/ERA40.clim.t42.grd',
+        calt='/home/qqf/Model/Model-Linear-Baroclinic-Model/bs/gt3/grz.t42',
         kmo=6, navg=3, ozm=f, osw=f
  &end
 
- &nmfin cfm='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/frc/frc.t42l20.CNP.mat',
-        cfg='/home/qqf/Documents/Linear-Baroclinic-Model/qqf/frc/frc.t42l20.CNP.grd'
+ &nmfin cfm='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/frc/frc.t42l20.CNP.mat',
+        cfg='/home/qqf/Model/Model-Linear-Baroclinic-Model/qqf/frc/frc.t42l20.CNP.grd'
         fact=1.0,1.0,1.0,1.0,1.0
  &end
 
@@ -88,8 +88,8 @@ cat > ./SETPAR  << SETPAR
  &end
 
 
- &nmred cdr='/home/qqf/Documents/Linear-Baroclinic-Model/matrix.moi',
-        cfo='/home/qqf/Documents/Linear-Baroclinic-Model/matrix.moi/mat/MAT.t21l11m6.ncepannzm.moi.tmp.dat'
+ &nmred cdr='/home/qqf/Model/Model-Linear-Baroclinic-Model/matrix.moi',
+        cfo='/home/qqf/Model/Model-Linear-Baroclinic-Model/matrix.moi/mat/MAT.t21l11m6.ncepannzm.moi.tmp.dat'
  &end
 SETPAR
 

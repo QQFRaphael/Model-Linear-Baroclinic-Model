@@ -7,7 +7,7 @@
 #@$-N   1
 #@$-me
 #
-setenv LNHOME   /home/qqf/Documents/Linear-Baroclinic-Model   # ROOT of model
+setenv LNHOME   /home/qqf/Model/Model-Linear-Baroclinic-Model   # ROOT of model
 setenv LBMDIR   $LNHOME/model                          # ROOT of LBM 
 setenv SYSTEM   N000                                 # execute system
 setenv RUN      $LBMDIR/bin/$SYSTEM/lbm2.t42ml20ctintgr # Excutable file

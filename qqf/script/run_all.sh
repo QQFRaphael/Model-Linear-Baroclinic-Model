@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LNHOME=~/Documents/Linear-Baroclinic-Model
+LNHOME=/home/qqf/Model/Model-Linear-Baroclinic-Model
 
 rundays=20
 
