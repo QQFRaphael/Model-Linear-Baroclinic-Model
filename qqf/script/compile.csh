@@ -7,7 +7,7 @@
 #@$-N   1
 #@$-me
 #
-setenv LNHOME /home/qqf/Model/Model-Linear-Baroclinic-Model         # ROOT of model
+setenv LNHOME /home/qqf/Model/LBM         # ROOT of model
 setenv DIRM   $LNHOME/model/src  # ROOT of executable
 setenv DIR    $LNHOME/solver     # ROOT of executable
 setenv MYHOME $LNHOME/qqf/script

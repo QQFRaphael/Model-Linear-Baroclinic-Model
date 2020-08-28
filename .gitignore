@@ -4,6 +4,8 @@
 
 *.o
 
+fort.*
+
 *.nc
 
 linear.t42l20.qqf.grd

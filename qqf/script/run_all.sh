@@ -1,29 +1,29 @@
 #!/bin/bash
 
-LNHOME=/home/qqf/Model/Model-Linear-Baroclinic-Model
+LNHOME=/home/qqf/Model/LBM
 
 rundays=20
 
-kmo=6
+kmo=12
 navg=3
 
 khpr=1
-hamp=0.00001
-xdil=10
-ydil=10
-xcnt=320 #76.0 #105 #155 #165 #210 #133 #200 #140   #135 #277 #300 #330   #135
-ycnt=30 #36 #28 #55 #53  #42  #30 #40    #15 #45  #70  #65   #40
+hamp=1
+xdil=40.
+ydil=12.
+xcnt=210. #76.0 #105 #155 #165 #210 #133 #200 #140   #135 #277 #300 #330   #135
+ycnt=0. #36 #28 #55 #53  #42  #30 #40    #15 #45  #70  #65   #40
 
 kvpr=2
 vamp=8.
 vdil=20.
 vcnt=0.45
 
-ovor="t"
+ovor="f"
 odiv="f"
-otmp="f"
+otmp="t"
 ops="f"
-osph="f"
+osph="t"
 
 # clean all data
 ./clean.sh
